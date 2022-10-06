@@ -1,3 +1,5 @@
+from random import randint
+
 def is_valid(choice):
 	
 	if choice == None:
@@ -18,10 +20,20 @@ def prompt_choice():
 	return choice = input("Choose R/P/S!") 
 
 def prompt_ai():
-	return
+	return ["r", "p", "s"][(randint(0, 2))]
 
 def check_result(human_choice, ai_choice):
-	return
+	
+	player_choice = player_choice.lower()
+
+    if human_choice == ai_choice:
+        return "tie"
+    elif (ai_choice == "r" and human_choice == "s") or \
+        (ai_choice == "s" and human_choice == "p") or \
+        (ai_choice == "p" and human_choice == "r"):
+        return "human"
+    else:
+        return "ai"
 
 def play():
 
