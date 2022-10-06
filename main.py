@@ -1,3 +1,6 @@
+def is_valid(choice):
+	return
+	
 def prompt_choice():
 	return
 
@@ -6,7 +9,7 @@ def prompt_ai():
 
 def check_result(human_choice, ai_choice):
 	return
-	
+
 def play():
 
 	human_choice = prompt_choice()
