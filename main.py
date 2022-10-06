@@ -1,8 +1,21 @@
 def is_valid(choice):
-	return
 	
+	if choice == None:
+        return False
+
+    if choice.lower() in {"r", "p", "s"}:
+        return True
+
+    return False
+
 def prompt_choice():
-	return
+
+	choice = None
+
+	while not is_valid(choice):
+		choice = input("Choose R/P/S!") 
+
+	return choice = input("Choose R/P/S!") 
 
 def prompt_ai():
 	return
